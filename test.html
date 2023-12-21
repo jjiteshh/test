@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Feed in Telegram WebApp</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body style="background-color: #ffffff">
+<div style="position: absolute; margin-top: 5vh; margin-left: 5vw; height: 90vh; width: 90vw; border-radius: 5vh; background-color: var(--tg-theme-bg-color); box-shadow: 0 0 2vw #000000;">
+    <!-- Iframe for the video feed URL -->
+    <iframe src="http://takemotopiano.aa1.netvolante.jp:8190/nphMotionJpeg?Resolution=640x480&Quality=Standard&Framerate=30" 
+            style="height: 100%; width: 100%; border: none;"></iframe>
+</div>
+
+<script type="text/javascript">
+    Telegram.WebApp.ready();
+    Telegram.WebApp.expand();
+</script>
+</body>
+</html>
